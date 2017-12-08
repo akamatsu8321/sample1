@@ -31,6 +31,7 @@
 			margin:0 auto;
 		}
 
+
 		/* ========ID LAYOUT======== */
 		#top {
 		   width:780px;
@@ -87,6 +88,6 @@
 	 	<div id="pr">
 		</div>
 	</div>
-	
+
 </body>
 </html>
