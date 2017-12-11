@@ -39,5 +39,3 @@ pay varchar(30),
 insert_date datetime,
 delete_date datetime
 );
-
-
