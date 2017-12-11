@@ -70,7 +70,7 @@ body{
 			<li><s:form action="UserCreateAction">
 				<s:submit value="ユーザー登録"/>
 			</s:form></li>
-			<li><s:form action="MypageAction">
+			<li><s:form action="MyPageAction">
 				<s:submit value="マイページ"/>
 			</s:form></li>
 			<li><s:form action="CartAction">
