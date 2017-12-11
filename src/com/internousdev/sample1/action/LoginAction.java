@@ -3,8 +3,6 @@ package com.internousdev.sample1.action;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.internousdev.sample1.dao.LoginDAO;
 import com.internousdev.sample1.dto.LoginDTO;
@@ -17,9 +15,13 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 	private String result;
 
+	public Map<String, Object> session;
+
 	private LoginDAO loginDAO = new LoginDAO();
 
 	private LoginDTO loginDTO = new LoginDTO();
+
+
 
 	public String execute(){
 		result = ERROR;
@@ -30,8 +32,25 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 		if(((LoginDTO) session.get("loginUser")).getLoginFlg()){
 			result = SUCCESS;
-
-			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo()
 		}
+		return result;
+	}
+
+	public String getLoginUserId(){
+		return loginUserId;
+	}
+	public void setLoginUserId(String loginUserId){
+		this.loginUserId=loginUserId;
+	}
+
+	public String getLoginPassword(){
+		return loginPassword;
+	}
+	public void setLoginPassword(String loginPassword){
+		this.loginPassword=loginPassword;
+	}
+
+	public void setSession(Map<String, Object>session){
+		this.session=session;
 	}
 }
