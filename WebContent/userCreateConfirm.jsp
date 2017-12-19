@@ -64,6 +64,7 @@
 	</style>
 </head>
 <body>
+<jsp:include page="header.jsp" />
 	<div id="header">
 	 	<div id="pr">
 		</div>

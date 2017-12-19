@@ -20,6 +20,7 @@
 
 <action name="MyPageAction" class="com.internousdev.sample1.action.MyPageAction" method="execute">
 <result name="success">myPage.jsp</result>
+<result name="error">myPageError.jsp</result>
 </action>
 
 <action name="UserCreateConfirmAction" class="com.internousdev.sample1.action.UserCreateConfirmAction" method="execute">

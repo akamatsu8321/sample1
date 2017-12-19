@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>ユーザー作成失敗</title>
 </head>
 <body>
+<jsp:include page="header.jsp" />
+<br><br><br>
+<h1>ユーザー作成に失敗しました。</h1>
+<br><br>
+<a href='<s:url action="HomeAction" />'>ログインへ</a>
 
 </body>
 </html>
