@@ -62,7 +62,7 @@ body{
 
 <body>
 	<header>
-		<div class="logo"><s:form action="HomeAction"><h3><s:submit value="ページ名"/></h3></s:form></div>
+		<div class="logo"><s:form action="GoHomeAction"><h3><s:submit value="ページ名"/></h3></s:form></div>
 		<ul>
 			<li><s:form action="WelcomeAction">
 				<s:submit value="ログイン"/>

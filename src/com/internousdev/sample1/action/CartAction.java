@@ -1,16 +1,10 @@
-
 package com.internousdev.sample1.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class HomeAction extends ActionSupport {
+public class CartAction extends ActionSupport{
 
-	public String execute() {
-		///// ここから /////
-		
-		
-		
+	public String execute(){
 		return SUCCESS;
 	}
-
 }

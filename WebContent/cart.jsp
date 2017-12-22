@@ -5,13 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-
+<title>カート画面</title>
 </head>
 <body>
-<s:form action="GoHomeAction">
-<s:submit value="a"/>
-</s:form>
-
+<jsp:include page="header.jsp"/>
+<br><br><br>
+<h3>カート画面</h3>
 </body>
 </html>

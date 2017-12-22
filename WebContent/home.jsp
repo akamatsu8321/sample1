@@ -24,13 +24,26 @@ h1{
 
 <body>
 <jsp:include page="header.jsp" />
-<br>
+<br><br><br><br>
+ここから<br>
 
-<p>ホーム画面</p>
+<!-- Actionクラスへ情報を送信します。 -->
+<s:form action="BuyItemAction" method="post">
 
-<h1>ホーム画面</h1>
+<s:property value="loginUserId"/>
+<s:hidden name="loginUserId" value='<s:property value="loginUserId"/>'/>
+<s:property value="loginPassword"/>
+<s:hidden name="loginPassword" value='<s:property value="loginPassword"/>'/>
 
 
-
+	<s:hidden name="id" value='<s:property value="session.id" />'/>
+	<span>商品名</span>
+	<s:property value="session.buyItem_name" /><br>
+	<s:hidden name="buyItemName" value='<s:property value="session.buyItem_name" />'/>
+	<span>価格</span>
+	<s:property value="session.buyItem_price"/><br>
+	<s:hidden name="buyItemPrice" value='<s:property value="session.buyItem_price" />'/>
+	<s:submit value="購入"></s:submit>
+</s:form>
 </body>
 </html>
